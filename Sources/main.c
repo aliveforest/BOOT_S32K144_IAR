@@ -51,6 +51,9 @@ void Boot_to_App(uint32_t appEntry, uint32_t appstack) {
 	S32_SCB->VTOR = (uint32_t)APP_START_ADDRESS; // 设置中断向量
 	INT_SYS_DisableIRQGlobal();					 // 关闭全局中断
 //	MSR_MSP(stack_pointer);  // 设置堆栈指针
+//    asm(" LDR R4,  = stack_pointer \n"
+//        " LDR r5,  [r4] \n"
+//        " msr msp, r5             "); // 设置堆栈指针
 
 	jump_to_application(); // 进行跳转
 }
@@ -110,7 +113,7 @@ int main(void)
 				later_ms(1000);
 				Boot_to_App(appEntry, appstack);
 			}else
-				LPUART1_printf("Failed!\r\n");
+				LPUART1_printf("Failed to Receive!\r\n");
 		}
     }
 

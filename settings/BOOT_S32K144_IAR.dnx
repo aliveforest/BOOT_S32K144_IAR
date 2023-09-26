@@ -63,7 +63,7 @@
         <CHIPMODE>_ "NXP_S32K1xx_S32K144F512M15"</CHIPMODE>
     </PE_DEVICE>
     <DebugChecksum>
-        <Checksum>4215904871</Checksum>
+        <Checksum>951688884</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -83,12 +83,6 @@
         <DEFAULT_MACRO_PATH>_ "D:\IAR Systems\Embedded Workbench 8.2\arm\bin\pemicro\P&amp;E"</DEFAULT_MACRO_PATH>
         <DEFAULT_LOGFILE_PATH>_ "D:\IAR Systems\Embedded Workbench 8.2\arm\bin\pemicro\P&amp;E"</DEFAULT_LOGFILE_PATH>
     </PE_SETTINGS>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints>
-        <Count>0</Count>
-    </Breakpoints>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -98,6 +92,12 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints>
+        <Count>0</Count>
+    </Breakpoints>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>

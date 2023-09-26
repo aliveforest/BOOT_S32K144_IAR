@@ -53,7 +53,7 @@ static void Clear_YM(YmFrame_t *Ym_x){
     memset(Ym_x->data,0u, sizeof(Ym_x->data)/sizeof(Ym_x->data[0])); /* 清空data数组 */
 }
 
-static uint8_t file_name[FILE_NAME_LENGTH]={0}, file_size[FILE_SIZE_LENGTH]={0};
+static uint8_t file_name[FILE_NAME_LENGTH]={0};
 /* 文件信息存储 ASCII形式*/
 static ret_t File_Information_Storage(YmFrame_t *Ym_F){
     uint16_t i,j;
@@ -63,11 +63,9 @@ static ret_t File_Information_Storage(YmFrame_t *Ym_F){
     file_name[i++] = '\0';
     Ym_F->file_size = 0;
     for (j=0; (Ym_F->data[i] != ' ') && (j < FILE_SIZE_LENGTH); j++,i++) {
-        file_size[j] = Ym_F->data[i];
         Ym_F->file_size *=10u;
         Ym_F->file_size += (Ym_F->data[i]-'0');
     }
-    file_size[j] = ' ';
 //    Ym_F->file_size = strtol(file_size, NULL, 10); /* 16进制字符串转数字 */
     if (Ym_F->file_size > (FLASH_SIZE - 1)){ /* 判断数据包是否过大 */
         Send_Byte(YM_CAN); Send_Byte(YM_CAN);  /* 取消传输，大于给定的flash大小，则结束 */
@@ -97,7 +95,7 @@ ret_t Ymodem_Receive_File(uint32_t FlashDestination, uint32_t timeout) {
     for (;;){
     	for(j=0;j<20;++j){
     		if(j>18) {
-    			LPUART1_printf("Time Out!\r\n"); later_ms(500);
+    			LPUART1_printf("\r\nTime Out!\r\n"); later_ms(500);
     			Clear_YM(Ym_F);/* 清空Ym_F所有内容 */
     			return RE_TMOUT;
     		}

@@ -90,7 +90,7 @@ void LPUART1_transmit_string(char *data_string)  {
 char LPUART1_TX_BUF[200];
 /* 串口打印函数 */
 void LPUART1_printf(char *fmt, ...) {
-	uint32_t bytesRemaining;
+//	uint32_t bytesRemaining;
 	va_list ap;
 	va_start(ap, fmt);
 	vsprintf((char *)LPUART1_TX_BUF, fmt, ap);

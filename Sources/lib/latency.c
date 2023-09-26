@@ -43,7 +43,7 @@ void later_us(volatile uint32_t nus)
 {
 	uint32_t told  = S32_SysTick->CVR ;      	//刚进入时的计数器值
 	uint32_t ticks;
-	uint32_t tnow,tcnt=0;
+	uint32_t tcnt=0;
 	// uint32_t reload=S32_SysTick->RVR;			//LOAD的值
 	ticks = nus*fac_us; 		//需要的节拍数 (四舍五入)
 
