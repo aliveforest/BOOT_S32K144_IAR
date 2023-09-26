@@ -63,7 +63,7 @@
         <CHIPMODE>_ "NXP_S32K1xx_S32K144F512M15"</CHIPMODE>
     </PE_DEVICE>
     <DebugChecksum>
-        <Checksum>1703848348</Checksum>
+        <Checksum>4215904871</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -89,6 +89,10 @@
     <Breakpoints>
         <Count>0</Count>
     </Breakpoints>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -98,8 +102,4 @@
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
 </settings>
