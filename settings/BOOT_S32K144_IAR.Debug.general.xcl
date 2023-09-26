@@ -1,0 +1,17 @@
+"D:\IAR Systems\Embedded Workbench 8.2\arm\bin\armproc.dll" 
+
+"D:\IAR Systems\Embedded Workbench 8.2\arm\bin\armpemicro.dll" 
+
+"D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Exe\BOOT_S32K144_IAR.out" 
+
+--plugin="D:\IAR Systems\Embedded Workbench 8.2\arm\bin\armbat.dll" 
+
+--device_macro="D:\IAR Systems\Embedded Workbench 8.2\arm\config\debugger\NXP\KE1xF.dmac" 
+
+--device_macro="D:\IAR Systems\Embedded Workbench 8.2\arm\config\debugger\NXP\S32K14x_trace.dmac" 
+
+--flash_loader="D:\IAR Systems\Embedded Workbench 8.2\arm\config\flashloader\NXP\FlashS32K144.board" 
+
+
+
+

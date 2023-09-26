@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2589449697</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Generated_Code\Flash1.c</file>
+            <file>$PROJ_DIR$\Generated_Code\pin_mux.c</file>
+            <file>$PROJ_DIR$\Generated_Code\pin_mux.h</file>
+            <file>$PROJ_DIR$\Generated_Code\clockMan1.c</file>
+            <file>$PROJ_DIR$\SDK\devices\common\s32_core_cm4.h</file>
+            <file>$PROJ_DIR$\Generated_Code\Flash1.h</file>
+            <file>$PROJ_DIR$\SDK\devices\S32K144\include\S32K144.h</file>
+            <file>$PROJ_DIR$\SDK\devices\S32K144\include\S32K144_features.h</file>
+            <file>$PROJ_DIR$\SDK\devices\S32K144\startup\startup_S32K144.s</file>
+            <file>$PROJ_DIR$\SDK\devices\S32K144\startup\system_S32K144.c</file>
+            <file>$PROJ_DIR$\Generated_Code\Cpu.h</file>
+            <file>$PROJ_DIR$\Generated_Code\clockMan1.h</file>
+            <file>$PROJ_DIR$\Generated_Code\Cpu.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\sim_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\inc\flash_driver.h</file>
+            <file>$PROJ_DIR$\SDK\devices\devassert.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\clock_S32K1xx.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\pcc_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_manager_S32K1xx.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\inc\interrupt_manager.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\pmc_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\devices\status.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_manager_S32K1xx.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_rcm_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_scg_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_smc_hw_access.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\inc\clock_manager.h</file>
+            <file>$PROJ_DIR$\SDK\devices\startup.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\pins\pins_gpio_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\devices\S32K144\startup\system_S32K144.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\scg_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\inc\pins_driver.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\clock_S32K1xx.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\pins\pins_port_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\power_manager.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\inc\clock.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\pins\pins_driver.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_smc_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\interrupt\interrupt_manager.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\smc_hw_access.h</file>
+            <file>$PROJ_DIR$\SDK\devices\startup.h</file>
+            <file>$PROJ_DIR$\SDK\devices\device_registers.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\pins\pins_port_hw_access.c</file>
+            <file>$PROJ_DIR$\SDK\drivers\src\flash\flash_driver.c</file>
+            <file>$PROJ_DIR$\Sources\lib\RGB_LED.c</file>
+            <file>$PROJ_DIR$\Sources\lib\LPUART.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash_driver.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins_port_hw_access.pbi</file>
+            <file>$PROJ_DIR$\Sources\lib\FlashWriteRead.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins_port_hw_access.o</file>
+            <file>$PROJ_DIR$\SDK\linker\S32K144_64_ram.icf</file>
+            <file>$PROJ_DIR$\Sources\lib\FlashWriteRead.c</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_smc_hw_access.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_smc_hw_access.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_manager_S32K1xx.o</file>
+            <file>$PROJ_DIR$\Sources\lib\RGB_LED.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins_driver.pbi</file>
+            <file>$PROJ_DIR$\SDK\linker\S32K144_64_flash.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_manager_S32K1xx.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\clockMan1.pbi</file>
+            <file>$PROJ_DIR$\Sources\main.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\BOOT_S32K144_IAR.bin</file>
+            <file>$PROJ_DIR$\Sources\lib\Ymodem.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash_driver.o</file>
+            <file>$PROJ_DIR$\Sources\lib\LPUART.c</file>
+            <file>$PROJ_DIR$\Sources\lib\Ymodem.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Flash1.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\Sources\lib\latency.c</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins_driver.o</file>
+            <file>$PROJ_DIR$\Debug\List\BOOT_S32K144_IAR.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\clockMan1.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Sources\lib\latency.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\SDK\drivers\inc\power_manager.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash_driver.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\FlashWriteRead.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\LPUART.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_S32K144.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_S32K144.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_manager.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\Cpu.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Cpu.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_S32K144.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_manager.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\clock_S32K1xx.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\clock_S32K1xx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Flash1.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins_port_hw_access.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Flash1.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_S32K144.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\RGB_LED.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\Ymodem.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\LPUART.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\FlashWriteRead.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt_manager.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\clockMan1.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt_manager.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LPUART.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Ymodem.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\latency.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\latency.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\FlashWriteRead.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RGB_LED.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_manager.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_smc_hw_access.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\Cpu.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin_mux.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\RGB_LED.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\Ymodem.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Exe\BOOT_S32K144_IAR.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\power_manager_S32K1xx.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\BOOT_S32K144_IAR.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins_driver.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt_manager.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\clock_S32K1xx.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\latency.o</file>
+            <file>$PROJ_DIR$\..\APP_S32K144\Sources\HardwareLib\Ymodem.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Generated_Code\Flash1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5 11 77 89 116 137 105 106 117 10 41 4 6 7 15 19 35 21 16 14 103 119 29 2 31</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14 41 77 4 11 116 105 5 7 89 10 19 2 16 119 137 106 117 35 29 6 15 21 103 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Generated_Code\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 128</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41 4 6 89 116 137 105 106 117 7 15 77 2 31 103 119 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137 6 117 103 116 15 2 4 7 89 106 77 31 21 119 41 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Generated_Code\clockMan1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 113</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 77 89 116 137 105 106 117 10 41 4 6 7 15 19 35 21 16 14 103 119 29 2 31 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89 117 29 137 41 15 77 21 106 35 11 6 31 10 116 105 19 14 2 5 4 7 103 16 119</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\devices\S32K144\startup\startup_S32K144.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 90</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\devices\S32K144\startup\system_S32K144.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 84</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 82</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41 4 6 89 116 137 105 106 117 7 15 77 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 106 77 4 7 89 29 6 15 116 117 41 137 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Generated_Code\Cpu.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 86</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 127</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 41 4 6 89 116 137 105 106 117 7 15 77 19 35 21 16 14 103 119 29 2 31 11 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 2 89 116 19 117 21 137 14 5 4 7 35 29 11 6 15 106 77 16 119 10 105 103 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_manager_S32K1xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 133</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 116 137 105 106 117 119 78 41 4 6 89 7 15 77 21 22 37 23 24 26 35 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137 89 24 119 22 21 37 116 105 4 7 77 41 16 78 23 26 106 117 6 15 103 35</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\power\S32K1xx\power_smc_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 126</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 116 137 105 106 117 119 37 21 41 4 6 89 7 15 77 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137 119 116 105 41 4 7 89 37 106 117 21 22 6 15 103 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\devices\startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 92</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40 89 116 137 105 106 117 41 4 6 7 15 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 89 106 4 41 116 117 137 105 6 15 40 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\clock\S32K1xx\clock_S32K1xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 139</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41 4 6 89 116 137 105 106 117 7 15 77 13 103 119 30 17 20 39 35 21 16 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16 103 77 41 20 30 35 4 7 89 116 105 137 13 17 39 19 6 15 119 21 106 117</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\power\power_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 125</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 116 137 105 106 117 119 78 41 4 6 89 7 15 77 21 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6 105 116 21 119 137 22 15 78 106 117 41 4 7 89 103 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\pins\pins_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 136</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41 4 6 89 116 137 105 106 117 7 15 77 28 31 103 119 21 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137 103 116 4 7 89 28 33 6 15 105 21 119 41 106 117 77 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\interrupt\interrupt_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 114</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19 41 4 6 89 116 137 105 106 117 7 15 77 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 7 89 4 40 41 6 15 137 19 116 106 117 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\pins\pins_port_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33 31 103 116 137 105 106 117 119 41 4 6 89 7 15 77 21 28</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 116 7 89 137 117 4 41 106 28 31 103 21 119 105 6 15 77 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SDK\drivers\src\flash\flash_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14 77 103 116 137 105 106 117 119 21 41 4 6 89 7 15 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 116 7 89 103 137 117 4 41 106 19 77 21 119 105 6 15 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\lib\RGB_LED.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56 6 89 116 137 105 106 117 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 117 6 116 77 89 106 56 137 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\lib\FlashWriteRead.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 80</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 111</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48 10 41 4 6 89 116 137 105 106 117 7 15 77 19 35 21 16 14 103 119 29 2 31 11 5 45 66 75</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77 35 41 116 14 45 11 6 21 103 29 15 89 105 10 75 19 2 5 4 7 137 31 48 106 117 16 119 66</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 134</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 107</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 41 4 6 89 116 137 105 106 117 7 15 77 19 35 21 16 14 103 119 29 2 31 11 5 115 140 45 66 48 75 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89 117 15 140 41 21 137 75 29 116 77 45 66 35 11 6 10 115 56 48 19 14 2 5 4 7 106 16 119 105 103 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\lib\Ymodem.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 109</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66 89 116 137 105 106 117 6 48 10 41 4 7 15 77 19 35 21 16 14 103 119 29 2 31 11 5 45 75 115 140 104 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21 89 103 75 48 116 105 41 15 77 14 76 104 29 6 115 45 137 106 117 35 11 31 10 140 119 66 19 2 5 4 7 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\lib\LPUART.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 118</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 89 116 137 105 106 117 45 66 48 10 41 4 7 15 77 19 35 21 16 14 103 119 29 2 31 11 5 75 88 104 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 117 89 116 137 102 19 21 88 77 6 2 45 104 106 66 75 14 5 4 7 16 119 11 105 48 10 35 29 15 103 31 76</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\lib\latency.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 141</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 122</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 121</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75 6 89 116 137 105 106 117 29 41 4 7 15 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15 41 6 89 105 29 137 75 116 106 117 4 7 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 131 72</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\BOOT_S32K144_IAR.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 58 94 73 86 100 64 123 138 141 118 134 99 71 49 91 55 53 124 83 90 84 120 70 74 68 52</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

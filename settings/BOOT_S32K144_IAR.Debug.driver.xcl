@@ -1,0 +1,17 @@
+"--endian=little" 
+
+"--cpu=Cortex-M4" 
+
+"--fpu=VFPv4_SP" 
+
+"-p" 
+
+"D:\IAR Systems\Embedded Workbench 8.2\arm\CONFIG\debugger\NXP\S32K144.ddf" 
+
+"--semihosting" 
+
+"--device=S32K144" 
+
+
+
+

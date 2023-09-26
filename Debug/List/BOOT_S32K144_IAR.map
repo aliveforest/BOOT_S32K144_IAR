@@ -1,0 +1,629 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  26/Sep/2023  15:47:25
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Exe\BOOT_S32K144_IAR.out
+#    Map file     =  
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\List\BOOT_S32K144_IAR.map
+#    Command line =  
+#        -f C:\Users\DENGTO~1\AppData\Local\Temp\EWD15A.tmp
+#        (D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\clock_S32K1xx.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\clockMan1.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\Cpu.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\Flash1.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\flash_driver.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\FlashWriteRead.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\interrupt_manager.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\latency.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\LPUART.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\main.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\pin_mux.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\pins_driver.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\pins_port_hw_access.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\power_manager.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\power_manager_S32K1xx.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\power_smc_hw_access.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\RGB_LED.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\startup.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\startup_S32K144.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\system_S32K144.o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj\Ymodem.o
+#        --no_out_extension -o
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Exe\BOOT_S32K144_IAR.out
+#        --map
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\List\BOOT_S32K144_IAR.map
+#        --config
+#        D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\SDK\linker\S32K144_64_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+"P1":  place in [from 0x400 to 0x40f] { section FlashConfig };
+"P2":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x8fff] { ro };
+define block __CODE_ROM { section .textrw_init };
+"P3":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x8fff] { block __CODE_ROM };
+define block RW { rw };
+"P4":  place in [from 0x1fff'8400 to 0x1fff'ffff] { block RW };
+define block __CODE_RAM { section .textrw };
+"P5":  place in [from 0x1fff'8400 to 0x1fff'ffff] { block __CODE_RAM };
+define block ZI { zi };
+"P7":  place in [from 0x2000'0000 to 0x2000'6bff] { block ZI };
+define block CSTACK with size = 1K, alignment = 8 { };
+"P9":  place in [from 0x2000'6c00 to 0x2000'6fff] { block CSTACK };
+do not initialize {
+   section .noinit, section .bss, section .data, section __DLIB_PERTHREAD,
+   section .customSection };
+initialize manually with packing = copy, complex ranges { section .textrw };
+initialize manually with packing = copy, complex ranges { section .data };
+
+No sections matched the following patterns:
+
+  section .customSection    in block customSectionBlock
+  section m_interrupts_ram  in "P10"
+
+
+  Section              Kind         Address    Size  Object
+  -------              ----         -------    ----  ------
+"A0":                                         0x400
+  .intvec              ro code          0x0   0x400  startup_S32K144.o [1]
+                                    - 0x400   0x400
+
+"P1":                                          0x10
+  FlashConfig          ro code        0x400    0x10  startup_S32K144.o [1]
+                                    - 0x410    0x10
+
+"P2-P3":                                     0x3ee4
+  .text                ro code        0x410  0x10b0  clock_S32K1xx.o [1]
+  .text                ro code       0x14c0   0xdf2  xprintffull_nomb.o [2]
+  .text                ro code       0x22b2     0xa  xsprout.o [2]
+  .text                ro code       0x22bc    0x16  strchr.o [4]
+  .text                ro code       0x22d2     0x2  startup_S32K144.o [1]
+  .text                ro code       0x22d4    0x40  xfail_s.o [2]
+  .text                ro code       0x2314    0x36  strlen.o [4]
+  .text                ro code       0x234a     0x2  startup_S32K144.o [1]
+  .text                ro code       0x234c    0x58  memchr.o [4]
+  .text                ro code       0x23a4   0x230  I64DivMod.o [4]
+  .text                ro code       0x25d4   0x1a2  DblMul.o [3]
+  .text                ro code       0x2776     0x2  startup_S32K144.o [1]
+  .text                ro code       0x2778    0xa6  ABImemcpy.o [4]
+  .text                ro code       0x281e     0x2  startup_S32K144.o [1]
+  .text                ro code       0x2820    0x70  frexp.o [3]
+  .text                ro code       0x2890    0x2e  DblCmpLe.o [3]
+  .text                ro code       0x28be     0x2  startup_S32K144.o [1]
+  .text                ro code       0x28c0    0x2e  DblCmpGe.o [3]
+  .text                ro code       0x28ee     0x2  startup_S32K144.o [1]
+  .text                ro code       0x28f0   0x13a  ldexp.o [3]
+  .text                ro code       0x2a2a     0x2  startup_S32K144.o [1]
+  .text                ro code       0x2a2c    0x3a  DblToS32.o [3]
+  .text                ro code       0x2a66     0x2  startup_S32K144.o [1]
+  .text                ro code       0x2a68    0x22  S32ToDbl.o [3]
+  .text                ro code       0x2a8a     0x2  startup_S32K144.o [1]
+  .text                ro code       0x2a8c    0xe2  DblSub.o [3]
+  .text                ro code       0x2b70   0x246  DblDiv.o [3]
+  .text                ro code       0x2db8    0x28  DblToU32.o [3]
+  .text                ro code       0x2de0    0x1a  U32ToDbl.o [3]
+  .text                ro code       0x2dfa     0x6  abort.o [2]
+  .text                ro code       0x2e00     0x2  I64DivZer.o [4]
+  .text                ro code       0x2e04   0x16a  DblAdd.o [3]
+  .text                ro code       0x2f70    0x14  exit.o [5]
+  .text                ro code       0x2f84   0x54a  Ymodem.o [1]
+  .text                ro code       0x34d0   0x198  LPUART.o [1]
+  .text                ro code       0x3668    0x6a  latency.o [1]
+  .text                ro code       0x36d4    0x66  ABImemset.o [4]
+  .text                ro code       0x373c    0x9e  FlashWriteRead.o [1]
+  .text                ro code       0x37dc    0x34  vsprintf.o [2]
+  .text                ro code       0x3810    0x28  interrupt_manager.o [1]
+  Veneer               ro code       0x3838     0x8  - Linker created -
+  .text                ro code       0x3840   0x268  flash_driver.o [1]
+  .data_init                         0x3aa8   0x140  <Block>
+    Initializer bytes  const         0x3aa8   0x140  <for .data-1>
+  .text                ro code       0x3be8    0xec  main.o [1]
+  .text                ro code       0x3cd4    0xbc  RGB_LED.o [1]
+  .text                ro code       0x3d90    0xd4  startup.o [1]
+  .rodata              const         0x3e64    0xa0  clock_S32K1xx.o [1]
+  .rodata              const         0x3f04    0x54  clock_S32K1xx.o [1]
+  .rodata              const         0x3f58    0x54  clock_S32K1xx.o [1]
+  .rodata              const         0x3fac    0x54  clock_S32K1xx.o [1]
+  .text                ro code       0x4000    0x48  system_S32K144.o [1]
+  .text                ro code       0x4048    0x3c  startup_S32K144.o [1]
+  __CODE_ROM                         0x4084    0x38  <Block>
+    Initializer bytes  const         0x4084    0x38  <for __CODE_RAM-1>
+  .rodata              const         0x40bc    0x24  Ymodem.o [1]
+  .text                ro code       0x40e0    0x22  fpinit_M.o [3]
+  .rodata              const         0x4104    0x20  FlashWriteRead.o [1]
+  .rodata              const         0x4124    0x20  FlashWriteRead.o [1]
+  .text                ro code       0x4144    0x1e  cmain.o [4]
+  .text                ro code       0x4162     0x4  low_level_init.o [2]
+  .text                ro code       0x4166     0x4  exit.o [2]
+  .text                ro code       0x416c     0xa  cexit.o [4]
+  .rodata              const         0x4178    0x1c  main.o [1]
+  .rodata              const         0x4194    0x1c  main.o [1]
+  .rodata              const         0x41b0    0x18  Ymodem.o [1]
+  .rodata              const         0x41c8    0x18  Ymodem.o [1]
+  .rodata              const         0x41e0    0x14  Flash1.o [1]
+  .rodata              const         0x41f4    0x14  Ymodem.o [1]
+  .rodata              const         0x4208    0x14  Ymodem.o [1]
+  .rodata              const         0x421c    0x14  Ymodem.o [1]
+  .rodata              const         0x4230    0x10  main.o [1]
+  .rodata              const         0x4240    0x10  main.o [1]
+  .rodata              const         0x4250    0x10  main.o [1]
+  .rodata              const         0x4260    0x10  Ymodem.o [1]
+  .rodata              const         0x4270     0xc  clock_S32K1xx.o [1]
+  .rodata              const         0x427c     0xc  clock_S32K1xx.o [1]
+  .rodata              const         0x4288     0xc  main.o [1]
+  .rodata              const         0x4294     0xc  Ymodem.o [1]
+  .rodata              const         0x42a0     0xc  Ymodem.o [1]
+  .rodata              const         0x42ac     0xc  Ymodem.o [1]
+  .rodata              const         0x42b8     0xc  Ymodem.o [1]
+  .rodata              const         0x42c4     0xc  Ymodem.o [1]
+  .rodata              const         0x42d0     0xc  Ymodem.o [1]
+  .text                ro code       0x42dc     0xc  cstartup_M.o [4]
+  .rodata              const         0x42e8     0x4  clock_S32K1xx.o [1]
+  .rodata              const         0x42ec     0x4  startup.o [1]
+  .text                ro code       0x42f0     0x4  startup_S32K144.o [1]
+                                   - 0x42f4  0x3ee4
+
+"P4-P5":                                      0x178
+  RW                            0x1fff'8400   0x140  <Block>
+    .data                       0x1fff'8400   0x140  <Block>
+      .data-1                   0x1fff'8400   0x140  <Init block>
+        .data          inited   0x1fff'8400    0xa0  clock_S32K1xx.o [1]
+        .data          inited   0x1fff'84a0    0x1c  clockMan1.o [1]
+        .data          inited   0x1fff'84bc    0x78  clockMan1.o [1]
+        .data          inited   0x1fff'8534     0x4  latency.o [1]
+        .data          inited   0x1fff'8538     0x4  Ymodem.o [1]
+        .data          inited   0x1fff'853c     0x4  Ymodem.o [1]
+  __CODE_RAM                    0x1fff'8540    0x38  <Block>
+    __CODE_RAM-1                0x1fff'8540    0x38  <Init block>
+      .textrw          inited   0x1fff'8540    0x38  flash_driver.o [1]
+                              - 0x1fff'8578   0x178
+
+"P7":                                         0x9a9
+  ZI                            0x2000'0000   0x9a9  <Block>
+    .bss                        0x2000'0000   0x9a9  <Block>
+      .bss             uninit   0x2000'0000     0xc  clock_S32K1xx.o [1]
+      .bss             uninit   0x2000'000c     0x4  clock_S32K1xx.o [1]
+      .bss             uninit   0x2000'0010     0x4  clock_S32K1xx.o [1]
+      .bss             uninit   0x2000'0014    0x1c  FlashWriteRead.o [1]
+      .bss             uninit   0x2000'0030     0x4  interrupt_manager.o [1]
+      .bss             uninit   0x2000'0034    0xc8  LPUART.o [1]
+      .bss             uninit   0x2000'00fc   0x408  LPUART.o [1]
+      .bss             uninit   0x2000'0504     0x4  LPUART.o [1]
+      .bss             uninit   0x2000'0508     0x4  main.o [1]
+      .bss             uninit   0x2000'050c     0x4  main.o [1]
+      .bss             uninit   0x2000'0510     0x4  Ymodem.o [1]
+      .bss             uninit   0x2000'0514    0x78  Ymodem.o [1]
+      .bss             uninit   0x2000'058c     0x8  Ymodem.o [1]
+      .bss             uninit   0x2000'0594   0x410  Ymodem.o [1]
+      .bss             uninit   0x2000'09a4     0x4  xfail_s.o [2]
+      .bss             uninit   0x2000'09a8     0x1  LPUART.o [1]
+                              - 0x2000'09a9   0x9a9
+
+"P9":                                         0x400
+  CSTACK                        0x2000'6c00   0x400  <Block>
+    CSTACK             uninit   0x2000'6c00   0x400  <Block tail>
+                              - 0x2000'7000   0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+       0x42f4       0x8fff  0x4d0c
+  0x1fff'8578  0x1fff'ffff  0x7a88
+  0x2000'09a9  0x2000'6bff  0x6257
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  rw code  ro data  rw data
+    ------               -------  -------  -------  -------
+command line/config:
+    -------------------------------------------------------
+    Total:
+
+D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj: [1]
+    Flash1.o                                    20
+    FlashWriteRead.o         158                64       28
+    LPUART.o                 408                      1 237
+    RGB_LED.o                188
+    Ymodem.o               1 354               240    1 180
+    clockMan1.o                                148      148
+    clock_S32K1xx.o        4 272               600      180
+    flash_driver.o           616       56       56
+    interrupt_manager.o       40                          4
+    latency.o                106                 4        4
+    main.o                   236               116        8
+    startup.o                212                 4
+    startup_S32K144.o      1 122
+    system_S32K144.o          72
+    -------------------------------------------------------
+    Total:                 8 784       56    1 252    2 789
+
+dl7M_tln.a: [2]
+    abort.o                    6
+    exit.o                     4
+    low_level_init.o           4
+    vsprintf.o                52
+    xfail_s.o                 64                          4
+    xprintffull_nomb.o     3 570
+    xsprout.o                 10
+    -------------------------------------------------------
+    Total:                 3 710                          4
+
+m7M_tls.a: [3]
+    DblAdd.o                 362
+    DblCmpGe.o                46
+    DblCmpLe.o                46
+    DblDiv.o                 582
+    DblMul.o                 418
+    DblSub.o                 226
+    DblToS32.o                58
+    DblToU32.o                40
+    S32ToDbl.o                34
+    U32ToDbl.o                26
+    fpinit_M.o                34
+    frexp.o                  112
+    ldexp.o                  314
+    -------------------------------------------------------
+    Total:                 2 298
+
+rt7M_tl.a: [4]
+    ABImemcpy.o              166
+    ABImemset.o              102
+    I64DivMod.o              560
+    I64DivZer.o                2
+    cexit.o                   10
+    cmain.o                   30
+    cstartup_M.o              12
+    memchr.o                  88
+    strchr.o                  22
+    strlen.o                  54
+    -------------------------------------------------------
+    Total:                 1 046
+
+shb_l.a: [5]
+    exit.o                    20
+    -------------------------------------------------------
+    Total:                    20
+
+    Gaps                      18                 4
+    Linker created             8                      1 024
+-----------------------------------------------------------
+    Grand Total:          15 884       56    1 256    3 817
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.bss$$Base              0x2000'0000          --   Gb  - Linker created -
+.bss$$Limit             0x2000'09a9          --   Gb  - Linker created -
+.customSection$$Base            0x0          --   Gb  - Linker created -
+.customSection_init$$Base
+                                0x0          --   Gb  - Linker created -
+.customSection_init$$Limit
+                                0x0          --   Gb  - Linker created -
+.data$$Base             0x1fff'8400          --   Gb  - Linker created -
+.data$$Limit            0x1fff'8540          --   Gb  - Linker created -
+.data_init$$Base             0x3aa8          --   Gb  - Linker created -
+.data_init$$Limit            0x3be8          --   Gb  - Linker created -
+?main                        0x4145         Code  Gb  cmain.o [4]
+Boot_to_App                  0x3be9   0x1c  Code  Gb  main.o [1]
+Boot_to_App::jump_to_application
+                        0x2000'0508    0x4  Data  Lc  main.o [1]
+Boot_to_App::stack_pointer
+                        0x2000'050c    0x4  Data  Lc  main.o [1]
+CLOCK_DRV_Init                0x94b   0x42  Code  Gb  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureFIRC
+                              0xe31   0x92  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureModulesFromScg
+                             0x10fd  0x17e  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureModulesFromScg::tmpSysClk
+                             0x427c    0xc  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureSIRC
+                              0xd91   0x9a  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureSOSC
+                              0xec3   0xea  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureSPLL
+                              0xfb9   0xde  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureTemporarySystemClock
+                             0x109d   0x54  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_ConfigureTemporarySystemClock::tmpSysClk
+                             0x4270    0xc  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetCurrentRunMode
+                              0xd2b   0x28  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetDefaultConfiguration
+                              0xb8f  0x19c  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetDefaultConfiguration::peripheralClockConfig
+                        0x1fff'8400   0xa0  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetFircFreq        0x1433   0x24  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetFircFreq::fircFreq
+                             0x42e8    0x4  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetSircFreq        0x140f   0x24  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetSrcFreq         0x1281   0x34  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetSysOscFreq
+                             0x13f5   0x1a  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_GetSysPllFreq
+                             0x1457   0x3a  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetPccConfiguration
+                              0xa1b   0x76  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetPmcConfiguration
+                              0xb6d   0x22  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetScgConfiguration
+                              0x98d   0x8e  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetSimConfiguration
+                              0xa91   0xdc  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetSystemClockConfig
+                             0x12b5  0x140  Code  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetSystemClockConfig::maxSysClksInHSRUN
+                             0x3fac   0x54  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetSystemClockConfig::maxSysClksInRUN
+                             0x3f58   0x54  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_SetSystemClockConfig::maxSysClksInVLPR
+                             0x3f04   0x54  Data  Lc  clock_S32K1xx.o [1]
+CLOCK_SYS_TransitionSystemClock
+                              0xd53   0x3e  Code  Lc  clock_S32K1xx.o [1]
+CSTACK$$Base            0x2000'6c00          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'7000          --   Gb  - Linker created -
+Clear_YM                     0x3017   0x3c  Code  Lc  Ymodem.o [1]
+Erase_Pages             0x2000'0510    0x4  Data  Lc  Ymodem.o [1]
+FLASH_DRV_CommandSequence
+                        0x1fff'8541   0x38  Code  Lc  flash_driver.o [1]
+FLASH_DRV_EraseSector        0x393d   0x9c  Code  Gb  flash_driver.o [1]
+FLASH_DRV_GetDEPartitionCode
+                             0x3841   0xb4  Code  Lc  flash_driver.o [1]
+FLASH_DRV_Init               0x38f5   0x48  Code  Gb  flash_driver.o [1]
+FLASH_DRV_Program            0x39d9   0xb4  Code  Gb  flash_driver.o [1]
+File_Information_Storage
+                             0x3053   0xdc  Code  Lc  Ymodem.o [1]
+Flash1_InitConfig0           0x41e0   0x14  Data  Gb  Flash1.o [1]
+Flash_Erase_Sector           0x373d   0x3c  Code  Gb  FlashWriteRead.o [1]
+Flash_Size_Calc              0x37c5   0x16  Code  Gb  FlashWriteRead.o [1]
+Flash_Write_Data             0x3779   0x40  Code  Gb  FlashWriteRead.o [1]
+INT_SYS_DisableIRQGlobal
+                             0x3829    0xc  Code  Gb  interrupt_manager.o [1]
+INT_SYS_EnableIRQGlobal
+                             0x3811   0x18  Code  Gb  interrupt_manager.o [1]
+LPUART1_NVIC_init_IRQs       0x3521   0x32  Code  Gb  LPUART.o [1]
+LPUART1_RxTx_IRQHandler
+                             0x35a3   0x80  Code  Gb  LPUART.o [1]
+LPUART1_TX_BUF          0x2000'0034   0xc8  Data  Gb  LPUART.o [1]
+LPUART1_init                 0x34d1   0x50  Code  Gb  LPUART.o [1]
+LPUART1_printf               0x3587   0x1c  Code  Gb  LPUART.o [1]
+LPUART1_transmit_char        0x3553   0x16  Code  Gb  LPUART.o [1]
+LPUART1_transmit_string
+                             0x3569   0x1e  Code  Gb  LPUART.o [1]
+LoadInt                      0x166f   0x7a  Code  Lc  xprintffull_nomb.o [2]
+PCC_SetClockMode              0x8c5   0x46  Code  Lc  clock_S32K1xx.o [1]
+PCC_SetPeripheralClockControl
+                              0x885   0x40  Code  Lc  clock_S32K1xx.o [1]
+PMC_SetLpoMode                0x90b   0x1a  Code  Lc  clock_S32K1xx.o [1]
+PMC_SetLpoTrimValue           0x925   0x1e  Code  Lc  clock_S32K1xx.o [1]
+RGB_LED_KEY_init             0x3cd5   0x78  Code  Gb  RGB_LED.o [1]
+RW$$Base                0x1fff'8400          --   Gb  - Linker created -
+RW$$Limit               0x1fff'8540          --   Gb  - Linker created -
+Receive_Packet               0x3313  0x128  Code  Gb  Ymodem.o [1]
+Region$$Table$$Base             0x0          --   Gb  - Linker created -
+Region$$Table$$Limit            0x0          --   Gb  - Linker created -
+SCG_ClearFircControl          0x6fb    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearFircLock             0x6ed    0xe  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearSircControl          0x669    0x8  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearSircLock             0x65b    0xe  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearSoscControl          0x771    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearSoscLock             0x763    0xe  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearSpllControl          0x81f    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_ClearSpllLock             0x811    0xe  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetCurrentSystemClockSource
+                              0x55b    0x8  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetFircRange              0x6e3    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetFircStatus             0x6d7    0xc  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetFircSystemClockMode
+                              0x6c1   0x16  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSircRange              0x651    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSircStatus             0x645    0xc  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSircSystemClockMode
+                              0x62f   0x16  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSoscStatus             0x757    0xc  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSoscSystemClockMode
+                              0x741   0x16  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSpllMultiplier         0x807    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSpllPredivider         0x7fd    0xa  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSpllStatus             0x7f1    0xc  Code  Lc  clock_S32K1xx.o [1]
+SCG_GetSpllSystemClockMode
+                              0x7db   0x16  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetClockoutSourceSel
+                              0x61d   0x12  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetFircAsyncConfig        0x5d5   0x12  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetFircConfiguration
+                              0x705    0xc  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetFircControl            0x711   0x30  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetHsrunClockControl
+                              0x5af   0x26  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetRunClockControl        0x563   0x26  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSircAsyncConfig        0x5e7   0x12  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSircConfiguration
+                              0x671    0xc  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSircControl            0x67d   0x44  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSoscAsyncConfig        0x5f9   0x12  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSoscConfiguration
+                              0x77b   0x1c  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSoscControl            0x797   0x44  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSpllAsyncConfig        0x60b   0x12  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSpllConfiguration
+                              0x829   0x18  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetSpllControl            0x841   0x44  Code  Lc  clock_S32K1xx.o [1]
+SCG_SetVlprClockControl
+                              0x589   0x26  Code  Lc  clock_S32K1xx.o [1]
+SIM_ClearTraceClockConfig
+                              0x52f    0x8  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetClockout               0x4eb   0x32  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetDmaClockGate           0x493   0x1e  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetEimClockGate           0x457   0x1e  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetErmClockGate           0x475   0x1e  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetLpoClocks              0x411   0x46  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetMpuClockGate           0x4b1   0x1e  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetMscmClockGate          0x4cf   0x1c  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetTraceClockConfig
+                              0x537   0x24  Code  Lc  clock_S32K1xx.o [1]
+SIM_SetTraceClockSource
+                              0x51d   0x12  Code  Lc  clock_S32K1xx.o [1]
+SMC_GetCurrentRunningMode
+                              0x943    0x8  Code  Lc  clock_S32K1xx.o [1]
+SW2_key                      0x3d4d    0xc  Code  Gb  RGB_LED.o [1]
+SW3_key                      0x3d59    0xc  Code  Gb  RGB_LED.o [1]
+Send_Byte                    0x2f85    0xc  Code  Lc  Ymodem.o [1]
+SystemInit                   0x4001   0x2e  Code  Gb  system_S32K144.o [1]
+Ym_Cmd_Process               0x2f91   0x86  Code  Lc  Ymodem.o [1]
+Ym_st                   0x2000'0594  0x410  Data  Lc  Ymodem.o [1]
+Ymodem_Receive_File          0x312f  0x1e4  Code  Gb  Ymodem.o [1]
+ZI$$Base                0x2000'0000          --   Gb  - Linker created -
+ZI$$Limit               0x2000'09a9          --   Gb  - Linker created -
+_GenldFullNoMb               0x1fb1  0x274  Code  Lc  xprintffull_nomb.o [2]
+_LdtobFullNoMb               0x1bad  0x3d6  Code  Lc  xprintffull_nomb.o [2]
+_LitobFullNoMb               0x1a5d  0x10a  Code  Lc  xprintffull_nomb.o [2]
+_PrintfFullNoMb              0x14c1  0x19e  Code  Gb  xprintffull_nomb.o [2]
+_PutcharsFullNoMb            0x2225   0x2e  Code  Lc  xprintffull_nomb.o [2]
+_PutfldFullNoMb              0x16e9  0x268  Code  Lc  xprintffull_nomb.o [2]
+_PuttxtFullNoMb              0x1951  0x10c  Code  Lc  xprintffull_nomb.o [2]
+_SProut                      0x22b3    0xa  Code  Gb  xsprout.o [2]
+__CODE_RAM$$Base        0x1fff'8540          --   Gb  - Linker created -
+__CODE_RAM$$Limit       0x1fff'8578          --   Gb  - Linker created -
+__CODE_ROM$$Base             0x4084          --   Gb  - Linker created -
+__CODE_ROM$$Limit            0x40bc          --   Gb  - Linker created -
+__RAM_END {Abs}         0x2000'6fff         Data  Gb  <internal module>
+__RAM_START {Abs}       0x1fff'8000         Data  Gb  <internal module>
+__RAM_VECTOR_TABLE_SIZE {Abs}
+                              0x400         Data  Gb  <internal module>
+__VECTOR_RAM {Abs}      0x1fff'8000         Data  Gb  <internal module>
+__VECTOR_TABLE {Abs}            0x0         Data  Gb  <internal module>
+__Vectors                       0x0          --   Gb  startup_S32K144.o [1]
+__Vectors_End                 0x400         Data  Gb  startup_S32K144.o [1]
+__Vectors_Size {Abs}          0x400          --   Gb  startup_S32K144.o [1]
+__aeabi_cdcmple              0x2891         Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple             0x28c1         Code  Gb  DblCmpGe.o [3]
+__aeabi_d2iz                 0x2a2d         Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz                0x2db9         Code  Gb  DblToU32.o [3]
+__aeabi_ddiv                 0x2b71         Code  Gb  DblDiv.o [3]
+__aeabi_dmul                 0x25d5         Code  Gb  DblMul.o [3]
+__aeabi_dsub                 0x2a8d         Code  Gb  DblSub.o [3]
+__aeabi_i2d                  0x2a69         Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0                0x2e01         Code  Gb  I64DivZer.o [4]
+__aeabi_memcpy               0x2779         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4              0x2799         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8              0x2799         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset               0x36d5         Code  Gb  ABImemset.o [4]
+__aeabi_ui2d                 0x2de1         Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod             0x23a5         Code  Gb  I64DivMod.o [4]
+__cmain                      0x4145         Code  Gb  cmain.o [4]
+__exit                       0x2f71   0x14  Code  Gb  exit.o [5]
+__iar_Fail_s                 0x22d5   0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr                 0x234d         Code  Gb  memchr.o [4]
+__iar_Memset                 0x36d5         Code  Gb  ABImemset.o [4]
+__iar_Memset_word            0x36dd         Code  Gb  ABImemset.o [4]
+__iar_Strchr                 0x22bd         Code  Gb  strchr.o [4]
+__iar_dadd                   0x2a9d         Code  Gb  DblSub.o [3]
+__iar_dsub                   0x2e05         Code  Gb  DblAdd.o [3]
+__iar_dsubStart              0x2e17         Code  Gb  DblAdd.o [3]
+__iar_frexp                  0x282d         Code  Gb  frexp.o [3]
+__iar_frexpl                 0x282d         Code  Gb  frexp.o [3]
+__iar_init_vfp               0x40e1         Code  Gb  fpinit_M.o [3]
+__iar_ldexp64                0x28f1         Code  Gb  ldexp.o [3]
+__iar_program_start          0x42dd         Code  Gb  cstartup_M.o [4]
+__iar_scalbln64              0x28f1         Code  Gb  ldexp.o [3]
+__iar_scalbn64               0x28f1         Code  Gb  ldexp.o [3]
+__iar_softfp___iar_frexp64
+                             0x2821         Code  Gb  frexp.o [3]
+__iar_softfp_frexp           0x2821         Code  Gb  frexp.o [3]
+__iar_softfp_frexpl          0x2821         Code  Gb  frexp.o [3]
+__low_level_init             0x4163    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  startup_S32K144.o [1]
+__vector_table_0x1c            0x1c         Data  Gb  startup_S32K144.o [1]
+_call_main                   0x4151         Code  Gb  cmain.o [4]
+_exit                        0x416d         Code  Gb  cexit.o [4]
+_main                        0x415f         Code  Gb  cmain.o [4]
+abort                        0x2dfb    0x6  Code  Gb  abort.o [2]
+bits_remain             0x1fff'8538    0x4  Data  Lc  Ymodem.o [1]
+clockMan1_InitConfig0   0x1fff'84bc   0x78  Data  Gb  clockMan1.o [1]
+clockNameMappings            0x3e64   0xa0  Data  Gb  clock_S32K1xx.o [1]
+crc16                        0x3495   0x3a  Code  Gb  Ymodem.o [1]
+data_c                  0x2000'09a8    0x1  Data  Gb  LPUART.o [1]
+exit                         0x4167    0x4  Code  Gb  exit.o [2]
+fac_us                  0x1fff'8534    0x4  Data  Lc  latency.o [1]
+file_name               0x2000'0514   0x78  Data  Lc  Ymodem.o [1]
+file_size               0x2000'058c    0x8  Data  Lc  Ymodem.o [1]
+flashConfig             0x2000'0014   0x1c  Data  Gb  FlashWriteRead.o [1]
+g_RtcClkInFreq          0x2000'000c    0x4  Data  Gb  clock_S32K1xx.o [1]
+g_TClkFreq              0x2000'0000    0xc  Data  Gb  clock_S32K1xx.o [1]
+g_interruptDisableCount
+                        0x2000'0030    0x4  Data  Lc  interrupt_manager.o [1]
+g_xtal0ClkFreq          0x2000'0010    0x4  Data  Gb  clock_S32K1xx.o [1]
+init_data_bss                0x3d91   0xd4  Code  Gb  startup.o [1]
+later_ms                     0x36b9   0x1a  Code  Gb  latency.o [1]
+later_us                     0x368b   0x1e  Code  Gb  latency.o [1]
+ldexp                        0x28f1         Code  Gb  ldexp.o [3]
+ldexpl                       0x28f1         Code  Gb  ldexp.o [3]
+main                         0x3c05   0xa0  Code  Gb  main.o [1]
+memchr                       0x234d         Code  Gb  memchr.o [4]
+packets_index           0x1fff'853c    0x4  Data  Gb  Ymodem.o [1]
+peripheralClockConfig0  0x1fff'84a0   0x1c  Data  Gb  clockMan1.o [1]
+receivebuff             0x2000'00fc  0x408  Data  Gb  LPUART.o [1]
+rev_i                   0x2000'0504    0x4  Data  Gb  LPUART.o [1]
+s_vectors                    0x42ec    0x4  Data  Lc  startup.o [1]
+scalbln                      0x28f1         Code  Gb  ldexp.o [3]
+scalblnl                     0x28f1         Code  Gb  ldexp.o [3]
+scalbn                       0x28f1         Code  Gb  ldexp.o [3]
+scalbnl                      0x28f1         Code  Gb  ldexp.o [3]
+scale                        0x1b67   0x46  Code  Lc  xprintffull_nomb.o [2]
+sec_hand                0x2000'09a4    0x4  Data  Lc  xfail_s.o [2]
+strchr                       0x22bd         Code  Gb  strchr.o [4]
+strlen                       0x2315         Code  Gb  strlen.o [4]
+systick_later_init           0x3669   0x22  Code  Gb  latency.o [1]
+vsprintf                     0x37dd   0x34  Code  Gb  vsprintf.o [2]
+
+
+[1] = D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  15 884 bytes of readonly  code memory
+      56 bytes of readwrite code memory
+   1 256 bytes of readonly  data memory
+   3 817 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
