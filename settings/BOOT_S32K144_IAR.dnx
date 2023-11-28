@@ -63,7 +63,7 @@
         <CHIPMODE>_ "NXP_S32K1xx_S32K144F512M15"</CHIPMODE>
     </PE_DEVICE>
     <DebugChecksum>
-        <Checksum>951688884</Checksum>
+        <Checksum>1723497349</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -96,7 +96,8 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints>
-        <Count>0</Count>
+        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\Sources\main.c}.58.2" 1 0 0 0 "" 0 "" 0</Bp0>
+        <Count>1</Count>
     </Breakpoints>
     <Aliases>
         <Count>0</Count>

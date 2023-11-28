@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR Systems\Embedded Workbench 8.2\common\bin\cspybat" -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.general.xcl" --backend -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.driver.xcl" 
+"C:\IAR\common\bin\cspybat" -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.general.xcl" --backend -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR Systems\Embedded Workbench 8.2\common\bin\cspybat" -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.driver.xcl" 
+"C:\IAR\common\bin\cspybat" -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\dengtongbei\IAR_works\BOOT_S32K144_IAR\settings\BOOT_S32K144_IAR.Debug.driver.xcl" 
 
 @echo off 
 :end

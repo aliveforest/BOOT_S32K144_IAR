@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "uds.h": "c",
+        "docan.h": "c",
+        "crc32.h": "c",
+        "stdbool.h": "c"
+    }
+}

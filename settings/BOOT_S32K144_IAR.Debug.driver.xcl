@@ -6,7 +6,7 @@
 
 "-p" 
 
-"D:\IAR Systems\Embedded Workbench 8.2\arm\CONFIG\debugger\NXP\S32K144.ddf" 
+"C:\IAR\arm\CONFIG\debugger\NXP\S32K144.ddf" 
 
 "--semihosting" 
 
